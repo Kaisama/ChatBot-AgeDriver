@@ -8,13 +8,13 @@ import MessageParser from './chatBot/MessageParser'
 function App() {
 
   return (
-    <>
+    <div className='App'>
       <ChatBot
       config={config}
       actionProvider={ActionProvider}
       messageParser={MessageParser}
       />
-    </>
+    </div>
   )
 }
 

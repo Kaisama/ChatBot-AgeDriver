@@ -1,8 +1,15 @@
 import {createChatBotMessage} from 'react-chatbot-kit'
+import Avatar from './Avatar';
+import UserAvatar from './UserAvatar';
 
 const config={
-    initialMessages:[createChatBotMessage(`Hello World`)],
-    botName:"AgeDriver"
+    botName:"AgeDriver Explorer",
+    initialMessages:[createChatBotMessage(`Hi! I'm AgeDriver Explorer`)],
+    customComponents:{
+        botAvatar:(props)=><Avatar {...props}/>,
+        userAvatar:(props)=><UserAvatar {...props}/>
+
+    }
 };
 
 export default config;
