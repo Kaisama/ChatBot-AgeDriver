@@ -65,3 +65,33 @@
 .slow{
   margin-left: 3.8rem;
 }
+.img-container{
+  width: 200px;
+  height: 200px;
+  border: 2px solid #61045F;
+  margin-left: 3.8rem;
+  overflow: hidden;
+  border: 5px;
+}
+
+.img-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ 
+}
+
+.img-component a{
+  position: relative;
+  bottom: 11.5rem;
+  left: 3.5rem;
+  border-radius: 5px;
+  background-color: #61045F;
+  color: white;
+  text-decoration: none;
+  padding: .5rem 1rem;
+}
+
+.img-component a:hover{
+  background-color: #61045F5e;
+}
