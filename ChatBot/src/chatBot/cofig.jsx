@@ -14,6 +14,9 @@ const config={
         userAvatar:(props)=><UserAvatar {...props}/>
 
     },
+    state:{
+        checker:null
+    },
     widgets:[
         {
             widgetName:"StartBtn",
