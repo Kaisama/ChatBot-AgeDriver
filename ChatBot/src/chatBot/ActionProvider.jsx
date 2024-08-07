@@ -3,6 +3,11 @@ import { Children } from "react"
 
 const ActionProvider=({createChatBotMessage,setState,children})=>{
 
+    const finalResult=(name,age,preference,vehicle)=>{
+        const message=createChatBotMessage(`Got it, ${name} ! Based on your ${age} and preference for a ${preference} ride I recommend ${vehicle}. Enjoy!`)
+        updateState(message)
+    }
+
     const afterAgeMessage=()=>{
         const message= createChatBotMessage("Do you lean towards a fast anf thrilling ride or prefer a more relaxed and comfortable ride",{
             widget:"StartSlow"
@@ -36,6 +41,7 @@ const ActionProvider=({createChatBotMessage,setState,children})=>{
                         initialAction,
                         afterNameMessage,
                         afterAgeMessage,
+                        finalResult
                     },
                 });
             })}
