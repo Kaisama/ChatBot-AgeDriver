@@ -7,7 +7,7 @@ const StartSlow = (props) => {
 
     const category=props.state.userData.category;
     const product =props.state.data[category][preference];
-    console.log(props.state.userData);
+    props.state.userData.product=product;
     props.actions.finalResult(name,age,preference,product.name);
   }
   return (
