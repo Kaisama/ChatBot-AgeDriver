@@ -21,7 +21,7 @@ const ActionProvider=({createChatBotMessage,setState,children})=>{
         updateState(message , "age");
     }
 
-    const updateState=(message , checker =" ")=>{
+    const updateState=(message , checker)=>{
         setState((prev)=>({
             ...prev,
             messages:[...prev.messages,message],
