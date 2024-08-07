@@ -2,6 +2,7 @@ import { cloneElement } from "react";
 import { Children } from "react";
 
 const MessageParser=({children,actions})=>{
+    console.log(children);
     const parse=(message)=>{
         const {checker}=children.props.state;
        console.log(message);
@@ -9,7 +10,7 @@ const MessageParser=({children,actions})=>{
         actions.afterNameMessage();
        }
 
-       if(checker === "preference"){
+       if(checker === "preference" && Number(message)){
         actions.afterAgeMessage();
 
        }
