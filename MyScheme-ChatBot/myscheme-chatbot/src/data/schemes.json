@@ -1,0 +1,14 @@
+[
+    {
+      "id": "1",
+      "name": "Scheme A",
+      "description": "Description of Scheme A",
+      "details": "More details about Scheme A."
+    },
+    {
+      "id": "2",
+      "name": "Scheme B",
+      "description": "Description of Scheme B",
+      "details": "More details about Scheme B."
+    }
+  ]
