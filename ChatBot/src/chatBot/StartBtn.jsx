@@ -1,6 +1,6 @@
 import '../App.css'
 const StartBtn = ({actionProvider,...rest}) => {
-    console.log(actionProvider,rest);
+    // console.log(actionProvider,rest);
     const initialAction=()=>{
       if(actionProvider){
         actionProvider.initialAction();}
