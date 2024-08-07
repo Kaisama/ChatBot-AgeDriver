@@ -4,6 +4,7 @@ import UserAvatar from './UserAvatar';
 import StartBtn from './StartBtn';
 import StartSlow from './StartSlow';
 import data from './data';
+import DisplayImage from './DisplayImage';
 
 const config={
     botName:"AgeDriver Explorer",
@@ -22,7 +23,11 @@ const config={
             name:"",
             age:0,
             category:"",
-            product:""
+            product:{
+                name:"",
+                link:"",
+                imageUrl:"",
+            }
         }
     },
     widgets:[
@@ -33,6 +38,9 @@ const config={
         {
             widgetName:"StartSlow",
             widgetFunc:(props)=> <StartSlow {...props}/>
+        },{
+            widgetName:"finalImage",
+            widgetFunc:(props)=><DisplayImage {...props}/>
         }
     ]
 };
