@@ -4,7 +4,9 @@ import { Children } from "react"
 const ActionProvider=({createChatBotMessage,setState,children})=>{
 
     const finalResult=(name,age,preference,vehicle)=>{
-        const message=createChatBotMessage(`Got it, ${name} ! Based on your ${age} and preference for a ${preference} ride I recommend ${vehicle}. Enjoy!`)
+        const message=createChatBotMessage(`Got it, ${name} ! Based on your ${age} and preference for a ${preference} ride I recommend ${vehicle}. Enjoy!`,{
+            widget:"finalImage"
+        })
         updateState(message)
     }
 
