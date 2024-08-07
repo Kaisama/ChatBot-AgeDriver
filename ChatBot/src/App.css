@@ -54,3 +54,14 @@
   border-left:8px solid #61045F ;
 
 }
+.startBtn,.StartSlow,.StartFast{
+  background-color: #61045F;
+  color: white;
+  padding: .5rem 1rem;
+  border-radius: 10px;
+  border: none;
+  margin-left: 3rem;
+}
+.slow{
+  margin-left: 3.8rem;
+}
