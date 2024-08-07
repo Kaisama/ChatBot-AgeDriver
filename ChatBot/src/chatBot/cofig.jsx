@@ -3,6 +3,7 @@ import Avatar from './Avatar';
 import UserAvatar from './UserAvatar';
 import StartBtn from './StartBtn';
 import StartSlow from './StartSlow';
+import data from './data';
 
 const config={
     botName:"AgeDriver Explorer",
@@ -15,7 +16,14 @@ const config={
 
     },
     state:{
-        checker:null
+        checker:null,
+        data:data,
+        userData:{
+            name:"",
+            age:0,
+            category:"",
+            product:""
+        }
     },
     widgets:[
         {
